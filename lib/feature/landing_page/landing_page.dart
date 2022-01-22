@@ -27,13 +27,25 @@ class _LandingPageState extends State<LandingPage> {
               });
            },
            items: [
-             BottomNavigationBarItem(icon: SPIcon(assetname: "logo-black.png",index: 0,currentIndex: currentIndex,),
+             BottomNavigationBarItem(
+               icon: SPIcon(
+                 assetname: "logo-black.png",
+                 isSelected: 0==currentIndex,
+                 ),
               label: "Home"
              ),
-             BottomNavigationBarItem(icon: SPIcon(assetname: "categories.png",index: 1,currentIndex: currentIndex,),
+             BottomNavigationBarItem(
+               icon: SPIcon(
+                 assetname: "categories.png",
+                isSelected: 1==currentIndex,
+                 ),
              label: "Categories"
              ),
-             BottomNavigationBarItem(icon: SPIcon(assetname: "profile.png",index: 2,currentIndex: currentIndex,),
+             BottomNavigationBarItem(
+               icon: SPIcon(
+                 assetname: "profile.png",
+                 isSelected: 2==currentIndex,
+                 ),
              label: "Profile"
              )
            ],
